@@ -1,0 +1,98 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Geist", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: calc(768px + 2rem);
+  padding: 0rem 1rem;
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.03rem;
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+  &:hover {
+    animation-name: jump;
+    animation-duration: 0.5s;
+  }
+}
+
+.title {
+  margin: 0;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.075rem;
+  &_mini {
+    font-size: 1rem;
+  }
+}
+
+.description {
+  margin: 0;
+  color: var(--color-grey);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.03rem;
+}
+
+.box {
+  text-decoration: none;
+  display: flex;
+  padding: 0.75rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-grey-dark);
+  color: var(--color-white);
+  font-size: 0.875rem;
+  font-weight: 400;
+  transition: all 0.1s ease-in;
+  user-select: none;
+  img {
+    width: 1.0625rem;
+    height: 1.0625rem;
+  }
+  &_light {
+    background: var(--color-grey-light);
+  }
+  &:hover {
+    color: var(--color-grey);
+    background: var(--color-border);
+  }
+}
+
+@font-face {
+  font-family: "Geist";
+  font-weight: 400;
+  src: local("Geist"),
+    url(../resources/fonts/Geist-Regular.woff2) format("opentype");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-weight: 500;
+  src: local("Geist"),
+    url(../resources/fonts/Geist-Medium.woff2) format("opentype");
+}
+
+@keyframes jump {
+  50% {
+    transform: translateY(-0.25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
