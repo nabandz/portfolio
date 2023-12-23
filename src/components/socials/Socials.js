@@ -1,8 +1,8 @@
-import "./socials.scss";
-
 import emailIcon from "../../resources/images/icons/email.svg";
 import tgIcon from "../../resources/images/icons/telegram.svg";
 import gihublIcon from "../../resources/images/icons/github.svg";
+
+import "./socials.scss";
 
 const Socials = () => {
   const socials = [

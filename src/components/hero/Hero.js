@@ -3,6 +3,8 @@ import Socials from "../socials/Socials";
 import linkIcon from "../../resources/images/icons/link.svg";
 import downloadIcon from "../../resources/images/icons/download.svg";
 
+import cv from "../../resources/CV.pdf";
+
 import "./hero.scss";
 
 const Hero = () => {
@@ -18,12 +20,7 @@ const Hero = () => {
           Web-разработки.
         </p>
         <div className="hero__cv">
-          <a
-            href="/"
-            className="box box hero__link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={cv} className="box box_light hero__link" download="CV">
             <img src={downloadIcon} alt="download icon" />
             Скачать CV
           </a>

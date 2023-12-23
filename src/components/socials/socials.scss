@@ -11,21 +11,6 @@
     &:hover {
       animation-name: jump;
       animation-duration: 0.5s;
-      /* flex-shrink: 0;
-      border-radius: 1.875rem;
-      background: var(--color-grey); */
-      /* &::before {
-        content: "";
-        position: absolute;
-        top: -5px;
-        left: 50%;
-        transform: translate(-50%);
-        width: 1.875rem;
-        height: 1.875rem;
-        flex-shrink: 0;
-        border-radius: 1.875rem;
-        background: var(--color-grey);
-      } */
     }
   }
 }

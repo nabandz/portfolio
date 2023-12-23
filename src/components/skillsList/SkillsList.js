@@ -1,10 +1,10 @@
-import "./skillsList.scss";
-
 import reactIcon from "../../resources/images/icons/react.svg";
 import jsIcon from "../../resources/images/icons/js.svg";
 import htmlIcon from "../../resources/images/icons/html.svg";
 import cssIcon from "../../resources/images/icons/css.svg";
 import gitIcon from "../../resources/images/icons/git.svg";
+
+import "./skillsList.scss";
 
 const SkillsList = (props) => {
   const { skills } = props;

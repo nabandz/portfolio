@@ -1,21 +1,38 @@
+import { Route, Routes, useLocation } from "react-router-dom";
+import { SwitchTransition, CSSTransition } from "react-transition-group";
+
 import Header from "../header/Header";
-import Hero from "../hero/Hero";
-import Skills from "../skills/Skills";
-import Portfolio from "../portfolio/Portfolio";
 import Footer from "../footer/Footer";
-import Experience from "../experience/Experience";
+
+import { MainPage, ExperiencePage, Page404 } from "../pages";
 
 import "./app.scss";
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="app">
       <Header />
       <main className="main">
-        {/* <Hero />
-        <Skills />
-        <Portfolio /> */}
-        <Experience />
+        <SwitchTransition component={null}>
+          <CSSTransition
+            key={location.pathname}
+            timeout={300}
+            classNames="page"
+            unmountOnExit
+          >
+            <Routes location={location}>
+              <Route key={"Page404"} path="*" element={<Page404 />}></Route>
+              <Route key={"MainPage"} path="/" element={<MainPage />}></Route>
+              <Route
+                key={"ExperiencePage"}
+                path="/experience"
+                element={<ExperiencePage />}
+              ></Route>
+            </Routes>
+          </CSSTransition>
+        </SwitchTransition>
       </main>
       <Footer />
     </div>

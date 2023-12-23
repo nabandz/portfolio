@@ -1,0 +1,10 @@
+.error-meassage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  &__img {
+    max-width: 100%;
+    border-radius: 0.25rem;
+  }
+}

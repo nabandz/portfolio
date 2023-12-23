@@ -1,13 +1,13 @@
 import SkillsList from "../skillsList/SkillsList";
 
-import "./portfolio.scss";
-
 import currencyConverterImg from "../../resources/images/currency-converter.png";
 import todoListImg from "../../resources/images/todo-list.png";
 import knigaKitImg from "../../resources/images/kniga-kit.png";
 import ujjoImg from "../../resources/images/ujjo.png";
 import linkIcon from "../../resources/images/icons/link.svg";
 import githubIcon from "../../resources/images/icons/github.svg";
+
+import "./portfolio.scss";
 
 const Portfolio = () => {
   const portfolioItems = [

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Socials from "../socials/Socials";
 
 import "./footer.scss";
@@ -5,9 +6,13 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <footer className="footer">
-      <a href="/" className="logo footer__logo">
+      <Link
+        to="/"
+        className="logo footer__logo"
+        onClick={() => window.scrollTo(0, 0)}
+      >
         nb
-      </a>
+      </Link>
       <Socials />
     </footer>
   );

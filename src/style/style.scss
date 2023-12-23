@@ -5,6 +5,12 @@
   font-family: "Geist", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 1rem;
+  scrollbar-gutter: stable;
+}
+
 body {
   min-height: 100vh;
   display: grid;
@@ -19,7 +25,7 @@ body {
 
 .logo {
   color: var(--color-white);
-  font-size: 1rem;
+  font-size: var(--text-base);
   font-weight: 500;
   letter-spacing: -0.03rem;
   text-decoration: none;
@@ -33,29 +39,39 @@ body {
 .title {
   margin: 0;
   color: var(--color-white);
-  font-size: 1.5rem;
+  font-size: var(--text-2xl);
   font-weight: 500;
   letter-spacing: -0.075rem;
   &_mini {
-    font-size: 1rem;
+    font-size: var(--text-base);
+  }
+  &_xl {
+    font-size: var(--text-xl);
   }
 }
 
 .description {
   margin: 0;
   color: var(--color-grey);
-  font-size: 1rem;
+  font-size: var(--text-base);
   font-weight: 400;
   letter-spacing: -0.03rem;
   &_mini {
-    font-size: 0.875rem;
+    font-size: var(--text-sm);
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .box {
   text-decoration: none;
   display: flex;
   padding: 0.75rem 1rem;
+  width: fit-content;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
@@ -63,7 +79,7 @@ body {
   border: 1px solid var(--color-border);
   background: var(--color-grey-dark);
   color: var(--color-white);
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   font-weight: 400;
   transition: all 0.1s ease-in;
   user-select: none;
@@ -78,6 +94,18 @@ body {
     color: var(--color-grey);
     background: var(--color-border);
   }
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-grey-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-grey-light);
 }
 
 @font-face {
@@ -101,4 +129,26 @@ body {
   100% {
     transform: translateY(0);
   }
+}
+
+.page-enter {
+  opacity: 0;
+  transform: scale(1);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
 }

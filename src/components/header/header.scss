@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .nav {
   &__list {
     list-style: none;
@@ -17,7 +18,7 @@
   &__link {
     position: relative;
     color: var(--color-white);
-    font-size: 1rem;
+    font-size: var(--text-base);
     font-weight: 400;
     letter-spacing: -0.03rem;
     text-decoration: none;

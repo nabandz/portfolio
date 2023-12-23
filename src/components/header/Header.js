@@ -1,22 +1,35 @@
+import { NavLink, Link } from "react-router-dom";
+
 import "./header.scss";
 
 const Header = () => {
   return (
     <header className="header">
-      <a href="/" className="logo header__logo">
+      <Link to="/" className="logo header__logo">
         nb
-      </a>
+      </Link>
       <nav className="header__nav nav">
         <ul className="nav__list">
           <li className="nav__item">
-            <a className="nav__link nav__link_active" href="/">
+            <NavLink
+              className={({ isActive }) =>
+                "nav__link " + (isActive ? "nav__link_active" : "")
+              }
+              end
+              to="/"
+            >
               главная страница
-            </a>
+            </NavLink>
           </li>
           <li className="nav__item">
-            <a className="nav__link" href="/">
+            <NavLink
+              className={({ isActive }) =>
+                "nav__link " + (isActive ? "nav__link_active" : "")
+              }
+              to="/experience"
+            >
               опыт
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

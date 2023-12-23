@@ -14,9 +14,9 @@
     margin: 0;
     margin-top: 1rem;
     color: var(--color-grey);
-    font-size: 1rem;
+    font-size: var(--text-base);
     font-weight: 500;
-    letter-spacing: -0.05rem;
+    letter-spacing: -0.03rem;
     p {
       margin: 1.25rem 0;
     }
@@ -27,8 +27,16 @@
     li {
       margin: 0.5rem 0;
     }
+    span {
+      color: var(--color-white);
+      text-decoration: underline;
+      text-decoration-color: var(--color-grey-light);
+      text-decoration-thickness: 0.1em;
+      text-underline-offset: 2px;
+    }
   }
 }
+
 .hr {
   margin: 0;
   width: 100%;
