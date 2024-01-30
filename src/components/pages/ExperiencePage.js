@@ -1,6 +1,6 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import Experience from "../experience/Experience";
+import Experience from "../Experience/Experience";
 
 const ExperiencePage = () => {
   return (

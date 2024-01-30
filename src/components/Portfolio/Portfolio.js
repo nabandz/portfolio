@@ -1,4 +1,4 @@
-import SkillsList from "../skillsList/SkillsList";
+import SkillsList from "../SkillsList/SkillsList";
 
 import currencyConverterImg from "../../resources/images/currency-converter.png";
 import todoListImg from "../../resources/images/todo-list.png";

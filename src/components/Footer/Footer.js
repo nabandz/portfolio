@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Socials from "../socials/Socials";
+import Socials from "../Socials/Socials";
 
 import "./footer.scss";
 

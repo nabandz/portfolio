@@ -1,8 +1,8 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
-import Header from "../header/Header";
-import Footer from "../footer/Footer";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 import { MainPage, ExperiencePage, Page404 } from "../pages";
 

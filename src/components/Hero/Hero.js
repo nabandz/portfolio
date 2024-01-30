@@ -1,4 +1,4 @@
-import Socials from "../socials/Socials";
+import Socials from "../Socials/Socials";
 
 import linkIcon from "../../resources/images/icons/link.svg";
 import downloadIcon from "../../resources/images/icons/download.svg";

@@ -1,4 +1,4 @@
-import SkillsList from "../skillsList/SkillsList";
+import SkillsList from "../SkillsList/SkillsList";
 
 import "./skills.scss";
 

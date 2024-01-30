@@ -1,8 +1,8 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import Hero from "../hero/Hero";
-import Skills from "../skills/Skills";
-import Portfolio from "../portfolio/Portfolio";
+import Hero from "../Hero/Hero";
+import Skills from "../Skills/Skills";
+import Portfolio from "../Portfolio/Portfolio";
 
 const MainPage = () => {
   return (
