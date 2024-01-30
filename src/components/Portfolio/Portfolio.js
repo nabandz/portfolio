@@ -4,6 +4,7 @@ import currencyConverterImg from "../../resources/images/currency-converter.png"
 import todoListImg from "../../resources/images/todo-list.png";
 import knigaKitImg from "../../resources/images/kniga-kit.png";
 import ujjoImg from "../../resources/images/ujjo.png";
+import rickAndMortyImg from "../../resources/images/rick-and-morty.png";
 import linkIcon from "../../resources/images/icons/link.svg";
 import githubIcon from "../../resources/images/icons/github.svg";
 
@@ -12,10 +13,18 @@ import "./portfolio.scss";
 const Portfolio = () => {
   const portfolioItems = [
     {
+      img: rickAndMortyImg,
+      skills: ["React", "JavaScript", "HTML", "styled components"],
+      title: "Rick And Morty",
+      descr: "Реализация приложения с Rick and Morty API.",
+      demo: "https://nabandz.github.io/rick-and-morty/",
+      github: "https://github.com/nabandz/rick-and-morty",
+    },
+    {
       img: todoListImg,
       skills: ["React", "JavaScript", "HTML", "SCSS"],
       title: "Список задач",
-      descr: "Практика. Реализация приложения “Список задач”",
+      descr: "Реализация приложения “Список задач”",
       demo: "https://nabandz.github.io/todo-list/",
       github: "https://github.com/nabandz/todo-list",
     },
@@ -23,7 +32,7 @@ const Portfolio = () => {
       img: currencyConverterImg,
       skills: ["React", "JavaScript", "HTML", "SCSS"],
       title: "Конвертер валют",
-      descr: "Практика. Реализация приложения “Конвертер валют”",
+      descr: "Реализация приложения “Конвертер валют”",
       demo: "https://nabandz.github.io/currency-converter/",
       github: "https://github.com/nabandz/currency-converter",
     },
@@ -39,7 +48,7 @@ const Portfolio = () => {
       img: ujjoImg,
       skills: ["JavaScript", "HTML", "SCSS"],
       title: "Ujjo",
-      descr: "Практика. Реализация лендинга по макету “Ujjo”",
+      descr: "Реализация лендинга по макету “Ujjo”",
       demo: "https://nabandz.github.io/Ujjo/",
       github: "https://github.com/nabandz/ujjo",
     },

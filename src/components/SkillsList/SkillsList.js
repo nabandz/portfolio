@@ -2,6 +2,7 @@ import reactIcon from "../../resources/images/icons/react.svg";
 import jsIcon from "../../resources/images/icons/js.svg";
 import htmlIcon from "../../resources/images/icons/html.svg";
 import cssIcon from "../../resources/images/icons/css.svg";
+import styledComponentsIcon from "../../resources/images/icons/styled-components.svg";
 import gitIcon from "../../resources/images/icons/git.svg";
 
 import "./skillsList.scss";
@@ -25,6 +26,10 @@ const SkillsList = (props) => {
     {
       name: "CSS/SCSS/SASS",
       icon: cssIcon,
+    },
+    {
+      name: "styled components",
+      icon: styledComponentsIcon,
     },
     {
       name: "SCSS",
